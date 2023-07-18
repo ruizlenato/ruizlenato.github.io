@@ -1,9 +1,9 @@
-@import url('https://fonts.cdnfonts.com/css/product-sans');
+@import url('https://fonts.cdnfonts.com/css/ubuntu');
 
 body {
 	background-color: #111111;
 	color: #cecac4;
-	font-family: 'Product Sans', sans-serif;
+	font-family: 'Ubuntu', sans-serif;
 	text-decoration: none;
 	margin: 0 auto;
 	padding: 15px;
@@ -25,7 +25,7 @@ li {
 	display: inline-block;
 	text-decoration: none;
 	margin: 10px;
-	font-size: calc(13px + 0.7vw);
+	font-size: calc(13px + 1vw);
 	color: white;
 
 }
@@ -43,8 +43,8 @@ a:hover {
 /* Topbar */
 .topbar-img {
 	margin-top: calc(0.1px + 0.1vh);
-	height: calc(40px + 2vw);
-	width: calc(40px + 2vw);
+	height: calc(42px + 2.5vw);
+	width: calc(42px + 2.5vw);
 	border-radius: 25%;
 }
 
@@ -64,12 +64,14 @@ h1 {
 
 h2 {
 	margin-top: 0;
+	font-weight: normal;
 	font-size: calc(15px + 1.9vw);
 }
 
 /* Botão de contato */
 .button {
 	font-size: calc(18px + 1.0vw);
+	font-weight: normal;
 	align-items: center;
 	display: inline-flex;
 	text-decoration: none;
