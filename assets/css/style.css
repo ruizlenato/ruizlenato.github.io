@@ -6,6 +6,7 @@ body {
 	background-color: #111111;
 }
 
+
 /* Text */
 body,
 h1,
@@ -29,15 +30,17 @@ header {
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
-	max-width: 68rem;
-	margin: 0 auto;
-	padding: 0rem 3rem;
+	padding: 0rem 25rem;
 }
 
 li {
 	display: inline-block;
 	padding: 0px 5px;
 	font-size: 1.3rem;
+}
+
+li a {
+	color: #cecac4;
 }
 
 a {
@@ -52,21 +55,20 @@ a:hover {
 
 /* Main */
 main {
-	padding: 2rem;
-	max-width: 68rem;
-	margin: 0 auto;
+	padding: 0rem 25rem;
+}
+
+aside {
+	text-align: left;
 }
 
 aside h1 {
 	padding-top: 2rem;
 	margin-bottom: 0;
-	text-align: left;
-
 }
 
 aside h2 {
 	margin-top: 0;
-	text-align: left;
 	font-weight: normal;
 }
 
@@ -86,20 +88,40 @@ aside h2 {
 
 /* Mobile styles */
 @media only screen and (max-width: 768px) {
+
+	header,
+	main {
+		padding: 0rem 2rem;
+	}
+
+	main,
+	aside h1 {
+		padding-top: 0rem;
+	}
+
+	li {
+		display: inline-block;
+		padding: 0px 5px;
+		font-size: 1.2rem;
+	}
+
 	header h2 {
 		font-size: 1.5rem;
 	}
 
 	h1 {
-		font-size: 2.8rem;
+		font-size: 2.0rem;
 	}
 
 	h2 {
 		font-size: 1.2rem;
 	}
 
-	main,
-	aside h1 {
-		padding-top: 0rem;
+	.button {
+		font-size: 1.0rem;
+		border-radius: 6px;
+		height: 4rem;
+		padding: 0 12px;
+		margin-top: 1rem;
 	}
 }
