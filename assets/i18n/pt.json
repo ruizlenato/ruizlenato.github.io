@@ -1,10 +1,9 @@
 {
-    "header": {
-        "title": "Luiz Renato"
-    },
-    "main": {
-        "title": "Olá, Me chamo Luiz Renato.",
-        "aboutMessage": "Sou discente de direito, do norte do Brasil, militante do Partido Comunista Brasileiro Revolucionário (PCBR) e talvez um aspirante a desenvolvedor.<br>Não tenho muito a dizer, mas se quiser falar comigo, clique no botão abaixo.",
-        "button": "Meu contato (Telegram)"
-    }
+	"main": {
+		"title": "Olá, eu sou o Luiz Renato.",
+		"subtitle": "Do norte do Brasil",
+		"description": "Discente de direito, militante do Partido Comunista Brasileiro Revolucionário (PCBR) e talvez um aspirante a desenvolvedor.<br>Não tenho muito a dizer, mas se quiser trocar uma ideia ou falar comigo, entre em contato pelo meu telegram.",
+		"contact": "Contato, Telegram.",
+		"connect": "Conecte-se"
+	}
 }

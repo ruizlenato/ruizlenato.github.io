@@ -1,10 +1,9 @@
 {
-    "header": {
-        "title": "Luiz Renato"
-    },
-    "main": {
-        "title": "Hello, I'm Luiz Renato.",
-        "aboutMessage": "A law student from the north of Brazil, a communist militant from the Brazilian Revolutionary Communist Party (PCBR) and perhaps an aspiring developer.<br>I don't have much to say, but if you want to talk to me, click on the button below.",
-        "button": "My Contact (Telegram)"
-    }
+	"main": {
+		"title": "Hello, I am Luiz Renato.",
+		"subtitle": "From the north of Brazil.",
+		"description": "Law student, militant of the Brazilian Revolutionary Communist Party (PCBR), and perhaps an aspiring developer.<br>I don't have much to say, but if you want to chat or talk to me, contact me via Telegram.",
+		"contact": "Contact, Telegram.",
+		"connect": "Connect"
+	}
 }
