@@ -1,18 +1,33 @@
 document.addEventListener("DOMContentLoaded", () => {
-	const userLang = navigator.language || navigator.userLanguage;
-	const lang = userLang.startsWith("pt") ? "pt" : "en";
+  const SUPPORTED_LANGS = ["pt", "en"];
+  const userLang = navigator.language?.split("-")[0] || "en";
+  const lang = SUPPORTED_LANGS.includes(userLang) ? userLang : "en";
 
-	fetch(`./assets/i18n/${lang}.json`)
-		.then((response) => response.json())
-		.then((translations) => {
-			for (const element of document.querySelectorAll("[data-i18n]")) {
-				const keys = element.getAttribute("data-i18n").split(".");
-				let text = translations;
-				for (const key of keys) {
-					text = text[key];
-				}
-				element.innerHTML = text;
-			}
-		})
-		.catch((error) => console.error("Error loading translations:", error));
+  if (lang === "pt") {
+    document.documentElement.lang = "pt-BR";
+    return;
+  }
+
+  fetch(`./assets/i18n/${lang}.json`)
+    .then((response) => {
+      if (!response.ok) throw new Error(`HTTP ${response.status}`);
+      return response.json();
+    })
+    .then((translations) => {
+      document.querySelectorAll("[data-i18n]").forEach((element) => {
+        const keys = element.getAttribute("data-i18n")?.split(".");
+        if (!keys) return;
+
+        const text = keys.reduce((obj, key) => obj?.[key], translations);
+        if (text) {
+          element.innerHTML = text;
+        } else {
+          console.warn(`Missing translation: ${keys.join(".")}`);
+        }
+      });
+      document.documentElement.lang = lang;
+    })
+    .catch((error) => {
+      console.error("i18n failed:", error);
+    });
 });
