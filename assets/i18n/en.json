@@ -1,9 +1,22 @@
 {
-	"main": {
-		"title": "Hello, I am Luiz Renato.",
-		"subtitle": "From the north of Brazil.",
-		"description": "Law student, militant of the Brazilian Revolutionary Communist Party (PCBR), and perhaps an aspiring developer.<br>I don't have much to say, but if you want to chat or talk to me, contact me via Telegram.",
-		"contact": "Contact, Telegram.",
-		"connect": "Connect"
-	}
+  "main": {
+    "title": "Hello, I am Luiz Renato.",
+    "subtitle": "From the north of Brazil.",
+    "description": "Law student, militant of the Brazilian Revolutionary Communist Party (PCBR), and perhaps an aspiring developer.<br>I don't have much to say, but if you want to chat or talk to me, contact me via Telegram or Signal.",
+    "contact_prefix": "Contact,",
+    "telegram": "Telegram",
+    "contact_or": "or",
+    "signal": "Signal",
+    "donate": "Support my work.",
+    "connect": "Connect"
+  },
+  "donate": {
+    "title": "Support my work",
+    "subtitle": "Thank you for considering supporting!",
+    "description": "If you enjoy my work and want to help me keep creating, your donation will be very welcome. Any amount makes a difference.",
+    "traditional": "Traditional methods",
+    "crypto": "Cryptocurrencies",
+    "back": "Back",
+    "homepage": "Homepage"
+  }
 }
