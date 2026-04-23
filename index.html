@@ -1,41 +1,68 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Luiz Renato</title>
-	<link rel="icon" type="image/webp" href="assets/images/seal.webp">
-	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
-</head>
+<!doctype html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta
+            name="description"
+            content="Luiz Renato - Estudante de direito, militante do PCBR e desenvolvedor."
+        />
+        <title>Luiz Renato</title>
+        <link rel="icon" type="image/webp" href="assets/images/seal.webp" />
+        <link rel="stylesheet" href="assets/css/style.css" />
+        <script src="assets/js/i18n.js" defer></script>
+    </head>
+    <body>
+        <main>
+            <div class="header">
+                <h1 data-i18n="main.title">Olá, eu sou o Luiz Renato.</h1>
+                <img
+                    src="https://user-images.githubusercontent.com/5679180/79618120-0daffb80-80be-11ea-819e-d2b0fa904d07.gif"
+                    width="35"
+                    height="35"
+                    alt=""
+                    aria-hidden="true"
+                />
+            </div>
+            <p data-i18n="main.subtitle" class="subtitle">Do norte do Brasil</p>
 
-<body>
-	<script src="assets/js/i18n.js"></script>
-	<main>
-		<div class="header">
-			<h1 data-i18n="main.title">Olá, eu sou o Luiz Renato.</h1>
-			<img src="https://user-images.githubusercontent.com/5679180/79618120-0daffb80-80be-11ea-819e-d2b0fa904d07.gif"
-				 width="35px" height="35px" alt="">
-		</div>
-		<p data-i18n="main.subtitle" class="subtitle">Do norte do Brasil</p>
-        
-        <p data-i18n="main.description" class="description">
-			Discente de direito, militante do Partido Comunista Brasileiro Revolucionário (PCBR)
-            e talvez um aspirante a desenvolvedor.<br>Não tenho muito a dizer,
-			mas se quiser trocar uma ideia ou falar comigo, entre em contato pelo meu telegram.
-        </p>
+            <p data-i18n="main.description" class="description">
+                Discente de direito, militante do Partido Comunista Brasileiro
+                Revolucionário (PCBR) e talvez um aspirante a desenvolvedor. Não
+                tenho muito a dizer, mas se quiser trocar uma ideia ou falar
+                comigo, entre em contato pelo meu telegram ou signal.
+            </p>
 
-        <p><a href="https://t.me/ruizlenato" class="contact" data-i18n="main.contact">Contato, Telegram.</a></p>
+            <p>
+                <span data-i18n="main.contact_prefix">Contato,</span>
+                <a href="https://t.me/ruizlenato">Telegram</a>
+                <span data-i18n="main.contact_or">ou</span>
+                <a
+                    href="https://signal.me/#eu/vag9w_dhPF0g3xPM61pKVhluwD-qS7QhTONqhri692pqLx_BuUtJqYtbrlsvRwW4"
+                    >Signal</a
+                >.
+            </p>
 
-		<section class="connect">
-			<h2 data-i18n="main.connect">Conecte-se</h2>
-			<p class="links">
-				<a class="links" href="https://github.com/ruizlenato">GitHub</a> ·
-				<a class="links" href="https://twitter.com/ruizlenato_">Twitter/X</a> ·
-				<a class="links" href="https://bsky.app/profile/ruizlenato.tech">Bluesky</a> ·
-				<a class="links" href="https://instagram.com/ruizlenato_">Instagram</a>
-			</p>
-		</section>
-	</main>
-</body>
+            <section class="connect" aria-labelledby="connect-heading">
+                <h2 id="connect-heading" data-i18n="main.connect">
+                    Conecte-se
+                </h2>
+                <p class="links">
+                    <a href="https://github.com/ruizlenato">GitHub</a> ·
+                    <a href="https://twitter.com/ruizlenato_">Twitter/X</a> ·
+                    <a href="https://bsky.app/profile/ruizlenato.tech"
+                        >Bluesky</a
+                    >
+                    ·
+                    <a href="https://instagram.com/ruizlenato_">Instagram</a>
+                </p>
+            </section>
 
-</html>	
+            <p>
+                <a href="donate.html" class="contact" data-i18n="main.donate"
+                    >Apoie meu trabalho.</a
+                >
+            </p>
+        </main>
+    </body>
+</html>
