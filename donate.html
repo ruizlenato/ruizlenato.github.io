@@ -1,0 +1,135 @@
+<!doctype html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta
+            name="description"
+            content="Doe para apoiar meu trabalho - Luiz Renato"
+        />
+        <title>Doe - Luiz Renato</title>
+        <link rel="icon" type="image/webp" href="assets/images/seal.webp" />
+        <link rel="stylesheet" href="assets/css/style.css" />
+        <script src="assets/js/i18n.js" defer></script>
+    </head>
+    <body>
+        <main>
+            <div class="header">
+                <h1 data-i18n="donate.title">Apoie meu trabalho</h1>
+                <img
+                    src="https://user-images.githubusercontent.com/5679180/79618120-0daffb80-80be-11ea-819e-d2b0fa904d07.gif"
+                    width="35"
+                    height="35"
+                    alt=""
+                    aria-hidden="true"
+                />
+            </div>
+            <p data-i18n="donate.subtitle" class="subtitle">
+                Obrigado por considerar apoiar!
+            </p>
+
+            <p data-i18n="donate.description" class="description">
+                Se você gosta do meu trabalho e quer me ajudar a continuar
+                criando, sua doação será muito bem-vinda. Qualquer valor faz
+                diferença.
+            </p>
+
+            <section class="donate-section">
+                <h2 data-i18n="donate.traditional">Formas tradicionais</h2>
+                <p class="links">
+                    <a
+                        href="https://www.paypal.com/donate/?hosted_button_id=ruizlenato"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        >PayPal</a
+                    >
+                    ·
+                    <span
+                        class="copy-text"
+                        data-copy="ruizlenato@proton.me"
+                        tabindex="0"
+                        role="button"
+                        aria-label="Copiar chave PIX"
+                        >PIX: ruizlenato@proton.me</span
+                    >
+                </p>
+            </section>
+
+            <section class="donate-section crypto">
+                <h2 data-i18n="donate.crypto">Criptomoedas</h2>
+                <div class="crypto-list">
+                    <div class="crypto-item">
+                        <strong>Bitcoin</strong>
+                        <span
+                            class="copy-text"
+                            data-copy="bc1q8a30tfxkhaklnpw6x4qk7fwctpzs8zf9qxhu59"
+                            tabindex="0"
+                            role="button"
+                            aria-label="Copiar endereço Bitcoin"
+                            >bc1q8a30tfxkhaklnpw6x4qk7fwctpzs8zf9qxhu59</span
+                        >
+                    </div>
+                    <div class="crypto-item">
+                        <strong>Ethereum</strong>
+                        <span
+                            class="copy-text"
+                            data-copy="0x1336cD6C9e37820e016D007222E2F4110DD3b87f"
+                            tabindex="0"
+                            role="button"
+                            aria-label="Copiar endereço Ethereum"
+                            >0x1336cD6C9e37820e016D007222E2F4110DD3b87f</span
+                        >
+                    </div>
+                    <div class="crypto-item">
+                        <strong>Solana</strong>
+                        <span
+                            class="copy-text"
+                            data-copy="GL2cU5s5qBm8VogVuLYpML9yVK7cbWnJk8HpVbzUYgxx"
+                            tabindex="0"
+                            role="button"
+                            aria-label="Copiar endereço Solana"
+                            >GL2cU5s5qBm8VogVuLYpML9yVK7cbWnJk8HpVbzUYgxx</span
+                        >
+                    </div>
+                </div>
+            </section>
+
+            <section class="connect" aria-labelledby="back-heading">
+                <h2 id="back-heading" data-i18n="donate.back">Voltar</h2>
+                <p class="links">
+                    <a href="index.html" data-i18n="donate.homepage"
+                        >Página inicial</a
+                    >
+                </p>
+            </section>
+        </main>
+
+        <script>
+            document.querySelectorAll(".copy-text").forEach((el) => {
+                const copyHandler = async () => {
+                    const text = el.dataset.copy;
+                    try {
+                        await navigator.clipboard.writeText(text);
+                        const original = el.textContent;
+                        el.textContent = "Copiado!";
+                        el.classList.add("copied");
+                        setTimeout(() => {
+                            el.textContent = original;
+                            el.classList.remove("copied");
+                        }, 1500);
+                    } catch (err) {
+                        console.error("Failed to copy:", err);
+                    }
+                };
+
+                el.addEventListener("click", copyHandler);
+                el.addEventListener("keypress", (e) => {
+                    if (e.key === "Enter" || e.key === " ") {
+                        e.preventDefault();
+                        copyHandler();
+                    }
+                });
+            });
+        </script>
+    </body>
+</html>
